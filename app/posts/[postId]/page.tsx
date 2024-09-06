@@ -41,9 +41,9 @@ export async function generateMetadata({ params: { postId } }: PostPageProps):Pr
 const Post = async ({ params: { postId } }: PostPageProps) => {
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`);
   const post:IPost = await res.json();
-    if (res.status === 404) {
-        return <notFound/>
-    }
+    // if (res.status === 404) {
+    //     return <notFound/>
+    // }
 
   return (
     <div className='px-40 py-16 text-center items-center'>
