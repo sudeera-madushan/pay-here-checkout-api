@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import md5 from 'md5';
 
-export default function PayHereCheckout() {
+export default function Checkout() {
   const [formData, setFormData] = useState({
     first_name: 'John',
     last_name: 'Doe',
